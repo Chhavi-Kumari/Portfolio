@@ -1,0 +1,6 @@
+.next/
+out/
+node_modules/
+.env*
+*.tsbuildinfo
+asset-contact-sheet.jpg

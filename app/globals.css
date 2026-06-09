@@ -471,14 +471,14 @@ a {
   [data-mode="creative"],
   [data-mode="creative"] body,
   [data-mode="creative"] .creative-surface {
-    cursor: url("/assets/minecraft-cursor.svg") 3 3, auto;
+    cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8cGF0aCBmaWxsPSIjMTQxMTBiIiBkPSJNMyAyaDEwdjNoM3YzaDN2M2gzdjNoM3Y1aC02djdoLTV2LTdoLTR2NEg2di03SDN6Ii8+CiAgPHBhdGggZmlsbD0iI2YyZjBlNiIgZD0iTTYgNWg2djNoM3YzaDN2M2gzdjJoLTZ2N2gtMnYtN0g5djNIOHYtNkg2eiIvPgogIDxwYXRoIGZpbGw9IiM4Y2U2NmIiIGQ9Ik02IDVoM3Y4SDZ6Ii8+Cjwvc3ZnPgo=") 3 3, auto;
   }
 
   [data-mode="creative"] a,
   [data-mode="creative"] button,
   [data-mode="creative"] [role="button"],
   [data-mode="creative"] canvas {
-    cursor: url("/assets/minecraft-cursor-active.svg") 5 5, pointer;
+    cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8cGF0aCBmaWxsPSIjMTQxMTBiIiBkPSJNMiAzaDEydjNoM3YzaDN2M2gzdjNoNHY3aC03djdoLTd2LTdIOXY0SDV2LThIMnoiLz4KICA8cGF0aCBmaWxsPSIjZmZmOGNmIiBkPSJNNSA2aDh2M2gzdjNoM3YzaDR2M2gtN3Y3aC0ydi03aC00djRIOHYtN0g1eiIvPgogIDxwYXRoIGZpbGw9IiM3MmU3ZmYiIGQ9Ik01IDZoNHY5SDV6bTE4IDBoM3YzaC0zem0zIDNoM3YzaC0zem0tMyAzaDN2M2gtM3oiLz4KPC9zdmc+Cg==") 5 5, pointer;
   }
 }
 

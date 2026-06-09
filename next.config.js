@@ -1,5 +1,6 @@
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Portfolio";
+const basePath = isGithubPages ? `/${repoName}` : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,8 +9,11 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: isGithubPages && repoName ? `/${repoName}` : "",
-  assetPrefix: isGithubPages && repoName ? `/${repoName}/` : ""
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  }
 };
 
-export default nextConfig;
+module.exports = nextConfig;

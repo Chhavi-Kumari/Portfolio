@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 export function Avatar3D() {
   return (
@@ -14,7 +15,7 @@ export function Avatar3D() {
       <div className="fake-avatar-perspective">
         <div className="fake-avatar-float">
           <Image
-            src="/assets/minecraft-avatar-fake3d.png"
+            src={assetPath("/assets/minecraft-avatar-fake3d.png")}
             alt="Minecraft-style Chhavi avatar with glasses and long dark hair"
             width={1024}
             height={1536}

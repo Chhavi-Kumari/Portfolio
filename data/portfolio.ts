@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/assetPath";
+
 export type Mode = "professional" | "creative";
 
 export type Experience = {
@@ -39,10 +41,10 @@ export const profile = {
   email: "chhavi.j269@gmail.com",
   linkedin: "https://www.linkedin.com/in/chhavikumari",
   github: "https://github.com/Chhavi-Kumari",
-  resume: "/Chhavi-Kumari-LinkedIn-Profile.pdf",
+  resume: assetPath("/Chhavi-Kumari-LinkedIn-Profile.pdf"),
   portfolio: "https://chhavikumari.framer.website/",
-  headshot: "/assets/headshot-v2.png",
-  minecraftAvatar: "/assets/minecraft-avatar-v2.png",
+  headshot: assetPath("/assets/headshot-v2.png"),
+  minecraftAvatar: assetPath("/assets/minecraft-avatar-v2.png"),
   summary:
     "AI and enterprise-systems focused Technical Program Manager with experience leading cross-functional delivery, SDLC execution, data reliability programs, and platform operations across education, research, energy, and nonprofit environments."
 };
@@ -377,7 +379,7 @@ export const projects: Project[] = [
     solution: "Separate creative content from corporate experience and render it as an exploratory, Minecraft-inspired system.",
     impact: "Creates a distinct home for storytelling, community, visual direction, and experiments.",
     technologies: ["Next.js", "React", "CSS 3D", "Tailwind CSS", "Static export"],
-    screenshots: ["/assets/minecraft-avatar.png"],
+    screenshots: [assetPath("/assets/minecraft-avatar.png")],
     links: []
   },
   {
@@ -391,7 +393,7 @@ export const projects: Project[] = [
     solution: "Placeholder: add campaign formats, posts, visuals, and coordination details.",
     impact: "Placeholder: add event reach, attendance, or engagement metrics.",
     technologies: ["Content strategy", "Community marketing", "Event storytelling"],
-    screenshots: ["/assets/aaroh.jpg"],
+    screenshots: [assetPath("/assets/aaroh.jpg")],
     links: []
   },
   {

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 
 type MinecraftAvatarFallbackProps = {
   note?: string;
@@ -15,7 +16,7 @@ export function MinecraftAvatarFallback({ note = "3D avatar fallback loaded" }: 
         <div className="creative-particles pointer-events-none absolute inset-0 z-10" aria-hidden="true" />
         <div className="grid h-full place-items-center">
           <Image
-            src="/assets/minecraft-skin-source.png"
+            src={assetPath("/assets/minecraft-skin-source.png")}
             alt="Minecraft-style Chhavi avatar fallback"
             width={469}
             height={532}

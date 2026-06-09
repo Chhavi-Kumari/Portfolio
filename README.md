@@ -40,7 +40,7 @@ Next exports the static site into `out/`.
 
 ### Option 1: GitHub Actions
 
-Create `.github/workflows/pages.yml`:
+The active workflow is `.github/workflows/deploy.yml`:
 
 ```yaml
 name: Deploy Portfolio
@@ -90,7 +90,9 @@ Then set **Settings → Pages → Source → GitHub Actions**.
 
 ```bash
 npm install
-$env:GITHUB_PAGES="true"; npm run build
+$env:GITHUB_PAGES="true"
+$env:GITHUB_REPOSITORY="Chhavi-Kumari/Portfolio"
+npm run build
 ```
 
 Upload the generated `out/` folder to your Pages branch or static host.

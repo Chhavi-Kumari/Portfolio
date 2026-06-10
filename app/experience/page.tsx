@@ -12,14 +12,7 @@ export default function ExperiencePage() {
   return (
     <>
       <SectionHeader
-        eyebrow={mode === "creative" ? "Creative quests" : "Experience"}
-        title={mode === "creative" ? "Creative work only" : "Technical program leadership"}
-        body={
-          mode === "creative"
-            ? "Creative Mode intentionally excludes traditional corporate roles and shows community, storytelling, student media, and creative leadership."
-            : "Concise recruiter-friendly role summaries. Each card links to a detail page with responsibilities, outcomes, metrics, technologies, and learnings."
-        }
-      />
+        eyebrow={mode === "creative" ? "Creative Quests" : "Experience"} />
       <div className="grid gap-5 lg:grid-cols-2">
         {visibleExperiences.map((experience) => (
           <Card key={experience.slug} title={experience.role} eyebrow={`${experience.company} · ${experience.dates}`} href={`/experience/${experience.slug}`}>

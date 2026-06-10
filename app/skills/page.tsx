@@ -4,7 +4,7 @@ import { certifications, skills } from "@/data/portfolio";
 export default function SkillsPage() {
   return (
     <>
-      <SectionHeader eyebrow="Skills" title="Two inventories, one data model" body="Professional Mode emphasizes technical program execution. Creative Mode emphasizes storytelling, community, and visual direction." />
+      <SectionHeader eyebrow="Skills" title="Two inventories, one data model" />
       <div className="grid gap-8 lg:grid-cols-2">
         <SkillGroup title="Professional Skills" items={skills.professional} />
         <SkillGroup title="Creative Skills" items={skills.creative} />

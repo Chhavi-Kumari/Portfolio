@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Mode } from "@/data/portfolio";
 
-const introMessage = "Hi, I’m Chhavi. Welcome to my portfolio — hope you have a fun time exploring.";
+const introMessage = "Hi, I’m Chhavi. Welcome to my portfolio - hope you have a fun time exploring.";
 
 type LandingIntroProps = {
   onEnter: (mode: Mode) => void;

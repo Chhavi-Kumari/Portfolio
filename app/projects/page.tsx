@@ -13,8 +13,6 @@ export default function ProjectsPage() {
     <>
       <SectionHeader
         eyebrow={mode === "creative" ? "Builds" : "Projects"}
-        title={mode === "creative" ? "Creative project world" : "Program and platform projects"}
-        body="Project placeholders are clearly marked and ready to replace with richer case-study details, screenshots, and links."
       />
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {visibleProjects.map((project) => (

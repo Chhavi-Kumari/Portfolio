@@ -41,8 +41,7 @@ export const profile = {
   email: "chhavi.j269@gmail.com",
   linkedin: "https://www.linkedin.com/in/chhavikumari",
   github: "https://github.com/Chhavi-Kumari",
-  resume: assetPath("/Chhavi-Kumari-LinkedIn-Profile.pdf"),
-  portfolio: "https://chhavikumari.framer.website/",
+  resume: assetPath("/Chhavi_Kumari-Resume.pdf"),
   headshot: assetPath("/assets/headshot-v2.png"),
   minecraftAvatar: assetPath("/assets/minecraft-avatar-v2.png"),
   summary:
@@ -54,8 +53,8 @@ export const navigation = [
   { label: "Experience", href: "/experience" },
   { label: "Skills", href: "/skills" },
   { label: "Projects", href: "/projects" },
-  { label: "Resume", href: "/resume" },
-  { label: "Blogs", href: "/blogs" },
+  //{ label: "Blogs", href: "/blogs" },
+  { label: "Resume", href: assetPath("/Chhavi_Kumari-Resume.pdf"), external: true },
   { label: "LinkedIn", href: profile.linkedin, external: true },
   { label: "GitHub", href: profile.github, external: true }
 ];
@@ -64,17 +63,42 @@ export const education = [
   {
     school: "USC Viterbi School of Engineering",
     degree: "Master of Science, Engineering Management",
-    dates: "January 2024 – December 2025"
+    dates: "January 2024 – December 2025",
+    coursework: [
+      "Engineering Project Management",
+      "Economic Analysis of Engineering Projects",
+      "Leading & Managing Engineering Teams",
+      "Technology Development & Innovation",
+      "Statistics",
+      "Industrial Ecology"
+    ]
   },
   {
     school: "USC Marshall School of Business",
     degree: "Master of Science, Engineering Management",
-    dates: "January 2025 – December 2025"
+    dates: "January 2025 – December 2025",
+    coursework: [
+      "Business Analytics",
+      "Global Operations Management",
+      "Sustainable Supply Chain"
+    ]
   },
   {
     school: "Vishwakarma Institute of Technology",
     degree: "Bachelor of Engineering, Mechanical Engineering",
-    dates: "2019 – 2023"
+    dates: "August 2019 – May 2023",
+    coursework: [
+      "Data Science",
+      "Object-Oriented Programming",
+      "Mechatronics & Robotics",
+      "Applied Electronics",
+      "Machine Design",
+      "Fluid Engineering",
+      "Thermodynamics",
+      "Electric & Hybrid Vehicles",
+      "Computer Integrated Manufacturing",
+      "Marketing Management"
+    ]
   }
 ];
 
@@ -113,7 +137,7 @@ export const professionalExperiences: Experience[] = [
   {
     slug: "usc-engineering-economics-course-producer",
     mode: "professional",
-    role: "Course Producer (Program Coordinator)",
+    role: "Course Producer",
     company: "University of Southern California",
     dates: "August 2025 – December 2025",
     location: "Los Angeles, CA",
@@ -137,7 +161,7 @@ export const professionalExperiences: Experience[] = [
   {
     slug: "usc-rossier-graduate-assistant-program-manager",
     mode: "professional",
-    role: "Graduate Assistant (Program Manager)",
+    role: "Program Manager (Graduate Assistant)",
     company: "University of Southern California",
     dates: "July 2024 – July 2025",
     location: "California, United States",
@@ -200,7 +224,7 @@ export const professionalExperiences: Experience[] = [
   {
     slug: "enpro-new-business-development",
     mode: "professional",
-    role: "New Business Development Intern",
+    role: "Project Management Intern | Renewables Department",
     company: "Enpro Industries Pvt Ltd",
     dates: "August 2022 – January 2023",
     summary:

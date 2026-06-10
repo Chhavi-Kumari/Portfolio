@@ -124,7 +124,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#F47C7C]">Program leadership</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#1F2937]">Selected Experience</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#1F2937]">Experience</h2>
           </div>
           <Link href="/experience" className="text-sm font-semibold text-[#E94864]">
             All roles →

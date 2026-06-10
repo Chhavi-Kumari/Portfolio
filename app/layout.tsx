@@ -6,7 +6,7 @@ import { profile } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Chhavi Kumari | Technical Program Manager",
-  description: "Dual-mode portfolio for Chhavi Kumari: professional TPM portfolio and Minecraft-inspired creative universe.",
+  description: "Dual-mode portfolio for Chhavi Kumari: Professional TPM portfolio and Minecraft-inspired creative universe.",
   verification: {
     google: "8s2dP9VRupQ5jFjbQzRgkYRUzLa8d3GTdgztiYXAbKY"
   },

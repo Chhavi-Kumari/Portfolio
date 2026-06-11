@@ -15,11 +15,10 @@ export default function ExperiencePage() {
         eyebrow={mode === "creative" ? "Creative Quests" : "Experience"} />
       <div className="grid gap-5 lg:grid-cols-2">
         {visibleExperiences.map((experience) => (
-          <Card key={experience.slug} title={experience.role} eyebrow={`${experience.company} · ${experience.dates}`} href={`/experience/${experience.slug}`}>
-            <p>{experience.summary}</p>
+          <Card key={experience.slug} title={experience.role} eyebrow={`${experience.company} · ${experience.dates}`}>
             <ul className="mt-4 space-y-2">
-              {experience.highlights.slice(0, 3).map((highlight) => (
-                <li key={highlight}>• {highlight}</li>
+              {experience.bullets.map((bullet) => (
+                <li key={bullet}>• {bullet}</li>
               ))}
             </ul>
           </Card>

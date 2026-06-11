@@ -132,10 +132,10 @@ export default function HomePage() {
         </div>
         <div className="mt-7 grid gap-6 lg:grid-cols-3">
           {professionalExperiences.slice(0, 3).map((experience) => (
-            <Card key={experience.slug} title={experience.role} eyebrow={`${experience.company} · ${experience.dates}`} href={`/experience/${experience.slug}`}>
+            <Card key={experience.slug} title={experience.role} eyebrow={`${experience.company} · ${experience.dates}`}>
               <ul className="space-y-3">
-                {experience.highlights.slice(0, 2).map((highlight) => (
-                  <li key={highlight}>• {highlight}</li>
+                {experience.bullets.slice(0, 2).map((bullet) => (
+                  <li key={bullet}>• {bullet}</li>
                 ))}
               </ul>
             </Card>
@@ -146,7 +146,7 @@ export default function HomePage() {
         <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#F47C7C]">Toolkit</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#1F2937]">Core Skills</h2>
         <div className="mt-6 flex flex-wrap gap-3">
-          {skills.professional.slice(0, 12).map((skill) => (
+          {skills.professional.slice(0, 20).map((skill) => (
             <span key={skill} className="rounded-full border border-[#FFD6C9] bg-white/85 px-4 py-2.5 text-sm text-[#6B7280] shadow-sm transition hover:-translate-y-0.5 hover:border-[#A7D8FF] hover:bg-[#A7D8FF]/20">
               {skill}
             </span>

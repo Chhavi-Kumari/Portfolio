@@ -1,5 +1,5 @@
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Portfolio";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Chhavi-Kumari";
 const basePath = isGithubPages ? `/${repoName}` : "";
 
 /** @type {import('next').NextConfig} */
